@@ -59,7 +59,9 @@ export function parseCatalogue(text) {
       );
     seenSkus.set(sku, line);
 
-    const id = `${brand}\u0000${model}`;
+    // Grouped case-insensitively: a hand-maintained sheet spells one handset
+    // several ways ("iPhone 13" / "Iphone 13"), and those are the same model.
+    const id = `${brand}\u0000${model}`.toLowerCase();
     if (!models.has(id))
       models.set(id, {
         brand,

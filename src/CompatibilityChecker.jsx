@@ -79,11 +79,11 @@ export default function CompatibilityChecker() {
             <dl className="mt-4 grid grid-cols-2 gap-3 rounded-xl bg-ink-50 p-3 text-xs">
               <div>
                 <dt className="font-semibold text-ink-500">Dimensions</dt>
-                <dd className="mt-0.5 text-ink-700">{m.dimensions}</dd>
+                <dd className="mt-0.5 text-ink-700">{m.dimensions || "—"}</dd>
               </div>
               <div>
                 <dt className="font-semibold text-ink-500">Camera cutout</dt>
-                <dd className="mt-0.5 text-ink-700">{m.cameraCutout}</dd>
+                <dd className="mt-0.5 text-ink-700">{m.cameraCutout || "—"}</dd>
               </div>
             </dl>
 
