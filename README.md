@@ -8,7 +8,6 @@ React + Vite + Tailwind. The catalogue in `src/data/compatibility.js` is placeho
 data — brand names, dimensions and SKU codes are not real.
 
 ```bash
-npm install
 npm run dev     # local dev server
 npm test        # filter logic self-check
 npm run build   # production build to dist/
