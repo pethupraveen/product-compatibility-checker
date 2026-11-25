@@ -20,7 +20,8 @@ function FitList({ icon, title, items }) {
               {c.type}
               <span className="ml-2 text-xs text-ink-500">{c.sku}</span>
             </span>
-            <Pill tone={c.fit === "Exact fit" ? "green" : "amber"}>{c.fit}</Pill>
+            {/* A fit listing several models with "/" is shared, not exact. */}
+            <Pill tone={c.fit.includes("/") ? "amber" : "green"}>{c.fit}</Pill>
           </li>
         ))}
       </ul>
