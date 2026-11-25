@@ -52,13 +52,12 @@ export default function CompatibilityChecker() {
           label="Search model"
           value={query}
           onChange={setQuery}
-          placeholder="e.g. Model S24"
+          placeholder="e.g. iPhone 13"
         />
       </FilterBar>
 
       <p className="text-xs text-ink-500">
         {results.length} {results.length === 1 ? "model" : "models"} in this view.
-        Model names, dimensions and SKU codes are placeholders.
       </p>
 
       <div className="grid gap-5 md:grid-cols-2">

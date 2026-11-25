@@ -4,8 +4,7 @@ Single-page lookup for mobile-accessory fitment: pick a handset model and see wh
 back cover and tempered glass SKUs fit it, which are shared with a neighbouring model,
 and which are still in sampling.
 
-React + Vite + Tailwind. The catalogue in `src/data/catalogue.csv` is placeholder
-data — brand names, dimensions and SKU codes are not real.
+React + Vite + Tailwind. The catalogue lives in `src/data/catalogue.csv`.
 
 ```bash
 npm run dev     # local dev server
