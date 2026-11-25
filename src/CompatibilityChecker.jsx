@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Smartphone, Shield, Layers } from "lucide-react";
-import { compatibilityDb, brands, filterModels, ALL_BRANDS } from "./data/compatibility.js";
+import { compatibilityDb, brands, filterModels, ALL_BRANDS } from "./data/catalogue.js";
 import { Card, Pill, FilterBar, SelectFilter, SearchFilter } from "./components/ui.jsx";
 
 function FitList({ icon, title, items }) {
